@@ -182,6 +182,7 @@
             this.btn_Clacular.TabIndex = 13;
             this.btn_Clacular.Text = "Calcular";
             this.btn_Clacular.UseVisualStyleBackColor = true;
+            this.btn_Clacular.Click += new System.EventHandler(this.btn_Clacular_Click);
             // 
             // btn_Limpiar
             // 

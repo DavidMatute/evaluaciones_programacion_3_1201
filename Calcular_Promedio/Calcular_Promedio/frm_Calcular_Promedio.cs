@@ -36,5 +36,21 @@ namespace Calcular_Promedio
         {
             Close();
         }
+
+        private void btn_Clacular_Click(object sender, EventArgs e)
+        {
+            Promedio Estudiante = new Promedio();
+
+            Estudiante.Nom_Estudiante = txt_Nombre.Text;
+            Estudiante.Num_cuenta = Convert.ToInt64(txt_Num_Cuenta.Text);
+            Estudiante.Nota_1 = Convert.ToInt32(txt_Nota_1.Text);
+            Estudiante.Nota_2 = Convert.ToInt32(txt_Nota_2.Text);
+            Estudiante.Nota_3 = Convert.ToInt32(txt_Nota_3.Text);
+            Estudiante.Nota_4 = Convert.ToInt32(txt_Nota_4.Text);
+
+            MessageBox.Show($"El estudiante {Estudiante.Nom_Estudiante} con número de cuenta {Estudiante.Num_cuenta} su promedio es de: {Estudiante.Promedio_Estudiante().ToString()}% y, {Estudiante.Clase_apro_repro()}.");
+
+        }
     }
 }
+            
